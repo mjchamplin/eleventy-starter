@@ -5,6 +5,8 @@ module.exports = function(eleventyConfig) {
 		files: './build/_assets/css/**/*.css'
 	});
 	
+  eleventyConfig.addPassthroughCopy("src/_assets/");
+
   return {
     dir: {
       input: './src',
